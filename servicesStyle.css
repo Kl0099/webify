@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  /* border: 3px solid black; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff9e0b;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+li:hover a {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: white !important;
+}
+
+.services {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+.item {
+  border: 2px solid black;
+  border-radius: 3%;
+  width: 30vw;
+  margin: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  box-shadow: 10px 5px 5px #ff9e0b;
+}
+.time :hover {
+  box-shadow: 10px 5px 5px black;
+}
+.item :where(h2, p, a) {
+  padding: 2px;
+}
+
+a {
+  text-decoration: none;
+  /* color: #f24e52; */
+}
+
+.head {
+  text-align: center;
+  padding-bottom: 5px;
+  /* min-height: 50vh; */
+}
+
+.head h1,
+#About header h1 {
+  font-size: 48px;
+}
+
+.services {
+  display: grid;
+}
+
+.services > div {
+  display: flex;
+}
+
+#About {
+  text-align: center;
+}
+
+#About header {
+  margin-bottom: 20px;
+}
+
+.items :where(.item1, .item2, .item3) {
+  padding: 15px;
+  font-size: 20px;
+}
+
+hr {
+  margin: 26px 5%;
+}
+
+#Contact {
+  display: grid;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1 {
+  text-decoration: double underline #ff9e0b;
+  margin: 10px;
+}
